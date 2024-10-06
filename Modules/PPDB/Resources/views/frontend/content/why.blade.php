@@ -1,6 +1,6 @@
 <div class="faq-page-area">
     <div class="container">
-        <h1 class="about-title">Kenapa Harus SMK Yadika Natar ?</h1>
+        <h1 class="about-title">Kenapa Harus SPKBM Sabilun Najjah ?</h1>
         <div class="row panel-group" id="faq-accordian">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="faq-box-wrapper">

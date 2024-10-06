@@ -8,7 +8,7 @@
             <div class="slider-content s-tb slide-1">
                 <div class="title-container s-tb-c">
                     <div class="title1">Achieve Your Dream With Us</div>
-                    <p>Kini Mendaftar ke SMK Yadika Natar lebih Mudah Daftar dari rumah dan tes dari rumah.</p>
+                    <p>Kini Mendaftar ke SPKBM Sabilun Najjah lebih Mudah Daftar dari rumah dan tes dari rumah.</p>
                     <div class="slider-btn-area">
                         <a href="{{route('register')}}" class="default-big-btn">Daftar</a>
                     </div>
@@ -19,7 +19,7 @@
             <div class="slider-content s-tb slide-2">
                 <div class="title-container s-tb-c">
                     <div class="title1">Best Education For You</div>
-                    <p>Jadikan Sekolah SMK Yadika Natar sebagai tempat dirimu menggapai mimpi.</p>
+                    <p>Jadikan Sekolah SPKBM Sabilun Najjah sebagai tempat dirimu menggapai mimpi.</p>
                     <div class="slider-btn-area">
                         <a href="{{route('register')}}" class="default-big-btn">Daftar</a>
                     </div>

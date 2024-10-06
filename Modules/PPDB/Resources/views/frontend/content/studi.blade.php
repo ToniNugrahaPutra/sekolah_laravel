@@ -1,7 +1,7 @@
    
  <div class="container">
         <h1 class="about-title">Program Studi</h1>
-        <p class="about-sub-title">Program Studi di SMK Yadika Natar, Pilih Passion Kamu!</p>
+        <p class="about-sub-title">Program Studi di SPKBM Sabilun Najjah, Pilih Passion Kamu!</p>
     </div>
     <div class="container">
         <div class="row">

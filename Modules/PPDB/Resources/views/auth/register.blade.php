@@ -91,7 +91,7 @@
                                     </div>
                                 @endif
                                 <h2 class="card-title font-weight-bold mb-1">Welcome to SekolahKu! 👋</h2>
-                                <p class="card-text mb-2">Pendaftaran PPDB MK Yadika Natar</p>
+                                <p class="card-text mb-2">Pendaftaran PPDB PKBM Sabilun Najjah</p>
                                 <form class="auth-login-form mt-2" action="{{route('register.store')}}" method="POST">
                                     @csrf
                                     <div class="form-group">
