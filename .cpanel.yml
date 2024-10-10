@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/republ23/public_html/pkbm_public/
     - /bin/cp ./public/Assets/* $DEPLOYPATH/Assets
+    - /bin/cp ./public/css/* $DEPLOYPATH/css
     - /bin/cp ./public/js/* $DEPLOYPATH/js
