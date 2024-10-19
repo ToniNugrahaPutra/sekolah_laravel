@@ -6,6 +6,10 @@
  <link rel="stylesheet" type="text/css" href="{{asset('Assets/Backend/vendors/css/pickers/flatpickr/flatpickr.min.css')}}">
  <!-- END: Vendor CSS-->
 
+ <!-- Core CSS -->
+  <link rel="stylesheet" href="{{asset('Assets/Backend/vendors/css/rtl/core.css')}}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{asset('Assets/Backend/css/pages/page-user-view.css')}}" />
+
  <!-- BEGIN: Theme CSS-->
  <link rel="stylesheet" type="text/css" href="{{asset('Assets/Backend/css/bootstrap.css')}}">
  <link rel="stylesheet" type="text/css" href="{{asset('Assets/Backend/css/bootstrap-extended.css')}}">

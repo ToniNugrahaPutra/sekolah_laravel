@@ -73,7 +73,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                <p>&copy; {{date('Y')}} <a href="http://andridesmana.pw/" target="_blank">Andri Desmana</a> All Rights Reserved.</p>
+                <p>&copy; {{date('Y')}} <a href="" target="_blank">pkbmsabilunnajjah</a> All Rights Reserved.</p>
             </div>
             {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <ul class="payment-method">
