@@ -98,6 +98,8 @@ Route::middleware('auth')->group(function () {
             'backend-pengguna-murid' => Backend\Pengguna\MuridController::class,
             /// PPDB \\\
             'backend-pengguna-ppdb' => Backend\Pengguna\PPDBController::class,
+            // PENDAFTARAN
+            'backend-pengguna-pendaftaran' => Backend\Pengguna\PendaftaranController::class,
             /// PERPUSTAKAAN \\\
             'backend-pengguna-perpus' => Backend\Pengguna\PerpusController::class,
             /// BENDAHARA \\\

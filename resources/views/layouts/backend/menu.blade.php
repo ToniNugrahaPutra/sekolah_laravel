@@ -146,6 +146,11 @@
                             <span class="menu-item text-truncate" data-i18n="Basic">PPDB</span>
                         </a>
                     </li>
+                    <li class="nav-item {{ (request()->is('backend-pengguna-pendaftaran')) ? 'active' : '' }}">
+                        <a class="d-flex align-items-center" href=" {{route('backend-pengguna-pendaftaran.index')}} "><i data-feather="circle"></i>
+                            <span class="menu-item text-truncate" data-i18n="Basic">Pendaftaran</span>
+                        </a>
+                    </li>
                     <li class="nav-item {{ (request()->is('backend-pengguna-perpus')) ? 'active' : '' }}">
                         <a class="d-flex align-items-center" href=" {{route('backend-pengguna-perpus.index')}} "><i data-feather="circle"></i>
                             <span class="menu-item text-truncate" data-i18n="Basic">Perpustakaan</span>
