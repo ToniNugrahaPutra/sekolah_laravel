@@ -5,7 +5,7 @@
                 <div class="footer-box">
                     <a href="/">
                         @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-footer.png')}}" alt="logo">
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-pkbm-removebg.png')}}" width="50" height="50" alt="logo">
                         @else
                             <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" alt="logo">
                         @endif
@@ -25,8 +25,10 @@
                 <div class="footer-box">
                     <h3>Informasi</h3>
                     <ul class="corporate-address">
-                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:{{@$footer->telp}}"> {{@$footer->telp}}</a></li>
-                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>{{@$footer->email}}</li>
+                        <div style="display: flex">
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:{{@$footer->telp}}"> {{@$footer->telp}}</a></li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>{{@$footer->email}}</li>
+                        </div>
                     </ul>
                     <div class="newsletter-area">
                         <h3>Ingin mendapat berita terupdate ?</h3>
@@ -73,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                <p>&copy; {{date('Y')}} <a href="" target="_blank">pkbmsabilunnajjah</a> All Rights Reserved.</p>
+                <p>&copy; {{date('Y')}} <a href="" target="_blank">Pkbm Sabilun Najjah</a> All Rights Reserved.</p>
             </div>
             {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <ul class="payment-method">
