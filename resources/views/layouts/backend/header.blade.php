@@ -12,10 +12,10 @@
                         <span class="user-status">{{Auth::user()->role}}</span>
                     </div>
                     <span class="avatar">
-                        @if (Auth::user()->foto_profile == NULL)
-                            <img class="round" src="{{asset('Assets/Backend/images/user.png')}}" alt="avatar" height="40" width="40">
+                        @if (Auth::user()->foto_profile == null)
+                            <img class="round" src="{{asset('Assets/Backend/images/user.png')}}" alt="avatar" width="40px">
                         @else
-                            <img class="round" src="{{asset('storage/images/profile/' .Auth::user()->foto_profile)}}" alt="avatar" height="40" width="40">
+                            <img class="round" src="{{asset('storage/images/profile/'. Auth::user()->foto_profile)}}" alt="avatar" width="40px">
                         @endif
                         <span class="avatar-status-online"></span>
                     </span>

@@ -5,19 +5,19 @@
                 <div class="footer-box">
                     <a href="/">
                         @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-footer.png')}}" alt="logo">
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.env('LOGO_SEKOLAH'))}}" width="100px" alt="logo">
                         @else
-                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" alt="logo">
+                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="100px" alt="logo">
                         @endif
                     </a>
                     <div class="footer-about">
                         <p> {{@$footer->desc}} </p>
                     </div>
                     <ul class="footer-social">
-                        <li><a href="{{'https://www.linkedin.com/in',@$footer->linkedln}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.twitter.com/',@$footer->twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.facebook.com/',@$footer->facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.instagram.com/',@$footer->instagram}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.linkedin.com/in'.@$footer->linkedln}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.twitter.com/'.@$footer->twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.facebook.com/'.@$footer->facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.instagram.com/'.@$footer->instagram}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>

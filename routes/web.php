@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 // ======= FRONTEND ======= \\
 
-Route::get('/','Frontend\IndexController@index');
+Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index'])->name('index');
 
     ///// MENU \\\\\
         //// PROFILE SEKOLAH \\\\
@@ -48,14 +48,14 @@ Route::middleware('auth')->group(function () {
      /// PROFILE \\\
     Route::resource('profile-settings',Backend\ProfileController::class);
     /// SETTINGS \\\
-      Route::prefix('settings')->group( function(){
-        // BANK
-        Route::get('/',[App\Http\Controllers\Backend\SettingController::class,'index'])->name('settings');
-        // TAMBAH BANK
-        Route::post('add-bank',[App\Http\Controllers\Backend\SettingController::class,'addBank'])->name('settings.add.bank');
-        // NOTIFICATIONS
-        Route::put('notifications/{id}',[SettingController::class,'notifications']);
-      });
+        Route::prefix('settings')->group( function(){
+            // BANK
+            Route::get('/',[App\Http\Controllers\Backend\SettingController::class,'index'])->name('settings');
+            // TAMBAH BANK
+            Route::post('add-bank',[App\Http\Controllers\Backend\SettingController::class,'addBank'])->name('settings.add.bank');
+            // NOTIFICATIONS
+            Route::put('notifications/{id}',[SettingController::class,'notifications']);
+        });
 
 
     /// CHANGE PASSWORD

@@ -5,19 +5,19 @@
                 <div class="footer-box">
                     <a href="/">
                         @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-pkbm-removebg.png')}}" width="50" height="50" alt="logo">
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-pkbm-removebg.png')}}" width="100px" alt="logo">
                         @else
-                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" alt="logo">
+                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="100px" alt="logo">
                         @endif
                     </a>
                     <div class="footer-about">
                         <p> {{@$footer->desc}} </p>
                     </div>
                     <ul class="footer-social">
-                        <li><a href="{{'https://www.linkedin.com/in',@$footer->linkedln}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.twitter.com/',@$footer->twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.facebook.com/',@$footer->facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="{{'https://www.instagram.com/',@$footer->instagram}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.linkedin.com/in'.@$footer->linkedln}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.twitter.com/'.@$footer->twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.facebook.com/'.@$footer->facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="{{'https://www.instagram.com/'.@$footer->instagram}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -25,13 +25,13 @@
                 <div class="footer-box">
                     <h3>Informasi</h3>
                     <ul class="corporate-address">
-                        <div style="display: flex">
+                        <div>
                             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:{{@$footer->telp}}"> {{@$footer->telp}}</a></li>
                             <li><i class="fa fa-envelope-o" aria-hidden="true"></i>{{@$footer->email}}</li>
                         </div>
                     </ul>
                     <div class="newsletter-area">
-                        <h3>Ingin mendapat berita terupdate ?</h3>
+                        <h6 class="text-white">Ingin mendapat berita terupdate ?</h6>
                         <div class="input-group stylish-input-group">
                             <input type="text" placeholder="Masukan email kamu disini" class="form-control">
                             <span class="input-group-addon">

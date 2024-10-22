@@ -6,9 +6,9 @@
                     <div class="header-top-left">
                         <div class="logo-area">
                             @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-pkbm.jpg')}}" width="41" height="41" alt="logo">
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.env('LOGO_SEKOLAH'))}}" width="50px" alt="logo">
                         @else
-                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" alt="logo">
+                            <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="50px" alt="logo">
                         @endif
                         </div>
                     </div>

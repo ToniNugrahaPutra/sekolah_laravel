@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-3">
                         <div class="logo-area">
-                            <a href="/ppdb"><img class="img-responsive" src="img/logo.png" alt="logo"></a>
+                            <a href="/ppdb"><img class="img-responsive" src="{{ asset('storage/images/logo/'.env('LOGO_SEKOLAH')) }}" width="50px" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-9">
