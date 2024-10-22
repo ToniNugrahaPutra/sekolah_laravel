@@ -2,7 +2,7 @@
 
     "use strict";
 
-    // Document ready function 
+    // Document ready function
     $(function() {
 
         /* Fixing for hover effect at IOS */
@@ -138,7 +138,7 @@
     /*-------------------------------------
      jQuery MeanMenu activation code
      --------------------------------------*/
-    $('nav#dropdown').meanmenu({ siteLogo: "<a href='index.html' class='logo-mobile-menu'><img src='img/mobile-logo.png' /></a>" });
+    $('nav#dropdown').meanmenu({ siteLogo: "<a href='index.html' class='logo-mobile-menu'><img src='../img/logo-pkbm.jpg' /></a>" });
 
     /*-------------------------------------
      Wow js Active
