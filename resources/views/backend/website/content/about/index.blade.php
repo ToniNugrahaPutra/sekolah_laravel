@@ -36,42 +36,7 @@
             <div class="col-12">
                 <section>
                     <div class="row">
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-header border-bottom">
-                                    <h4 class="card-title">About</h4>
-                                </div>
-                                <div class="card-datatable">
-                                    <table class="dt-responsive table">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>No</th>
-                                                <th>Image</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>    
-                                        <tbody>
-                                            @foreach ($about as $key => $abouts)
-                                                <tr>
-                                                    <td></td>
-                                                    <td> {{$key+1}} </td>
-                                                    <td> 
-                                                        <img src="{{asset('storage/images/about/' .$abouts->image)}}" class="img-responsive" style="max-width: 50px; max-height:50px"> 
-                                                    </td>
-                                                    <td> {{$abouts->is_active == '0' ? 'Aktif' : 'Tidak Aktif'}} </td>
-                                                    <td>
-                                                        <a href=" {{route('backend-about.edit', $abouts->id)}} " class="btn btn-success btn-sm">Edit</a>
-                                                    </td>
-                                                </tr>
-                                            @endforeach
-                                        </tbody>                                   
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
+                        <div class="col-lg-12 col-sm-12">
                             <div class="card">
                                 <div class="card-header header-bottom">
                                     <h4>Tambah About</h4>
@@ -130,11 +95,49 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                          
+
                                         </div>
                                         <button class="btn btn-primary" type="submit">Tambah</button>
                                         <a href="{{route('backend-about.index')}}" class="btn btn-warning">Batal</a>`
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">About</h4>
+                                </div>
+                                <div class="card-datatable">
+                                    <div class="table-responsive">
+                                        <table class="dt-responsive table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>No</th>
+                                                    <th>Image</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($about as $key => $abouts)
+                                                    <tr>
+                                                        <td></td>
+                                                        <td> {{$key+1}} </td>
+                                                        <td>
+                                                            <img src="{{asset('storage/images/about/' .$abouts->image)}}" class="img-responsive" style="max-width: 50px; max-height:50px">
+                                                        </td>
+                                                        <td> {{$abouts->is_active == '0' ? 'Aktif' : 'Tidak Aktif'}} </td>
+                                                        <td>
+                                                            <a href=" {{route('backend-about.edit', $abouts->id)}} " class="btn btn-success btn-sm">Edit</a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>

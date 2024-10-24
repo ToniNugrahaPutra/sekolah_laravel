@@ -69,7 +69,7 @@
                             <li><a href="#">Lainnya</a>
                                 <ul>
                                     <li><a href=" {{url('murid/perpustakaan')}} ">Perpustakaan</a></li>
-                                    <li><a href="">Alumni</a></li>
+                                    <li><a href="javascript:void(0)">Alumni</a></li>
                                 </ul>
                             </li>
                         </ul>

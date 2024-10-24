@@ -4,8 +4,8 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="footer-box">
                     <a href="/">
-                        @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-pkbm-removebg.png')}}" width="100px" alt="logo">
+                        @if (!isset($footer->logo) || $footer->logo == null)
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/logo-sekolah.png')}}" width="100px" alt="logo">
                         @else
                             <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="100px" alt="logo">
                         @endif

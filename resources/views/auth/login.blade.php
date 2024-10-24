@@ -55,7 +55,7 @@
               <div class="card-body">
                 <!-- Logo -->
                 <div class="w-100 d-flex justify-content-center mb-2">
-                    <img src="{{asset('Assets/Frontend/img/logo-pkbm.jpg')}}" width="100" alt="">
+                    <img src="{{asset('Assets/Frontend/img/logo-sekolah.jpg')}}" width="100" alt="">
                 </div>
                 <!-- /Logo -->
                 <h4 class="mb-1">Selamat datang di SekolahKu!</h4>

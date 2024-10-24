@@ -86,7 +86,7 @@
                                     <div class="alert alert-danger" role="alert">
                                         <div class="alert-body">
                                             <strong>{{ $message }}</strong>
-                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                            <button type="button" class="close" data-dismiss="alert"><i class="fas fa-times"></i></button>
                                         </div>
                                     </div>
                                 @endif

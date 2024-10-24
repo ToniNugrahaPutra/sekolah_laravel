@@ -41,9 +41,17 @@ class AuthController extends Controller
         try {
             DB::beginTransaction();
 
-           // Pilih kalimat
-           $kalimatKe  = "1";
-           $username   = implode(" ", array_slice(explode(" ", $request->name), 0, $kalimatKe)); // ambil kalimat
+            // Pecah nama menjadi array kata-kata
+            $namaArray = explode(" ", $request->name);
+
+            // Periksa apakah kata pertama adalah singkatan (mengandung titik)
+            if (strpos($namaArray[0], '.') !== false) {
+                // Jika kata pertama adalah singkatan, ambil dua kata pertama
+                $username = implode(" ", array_slice($namaArray, 0, 2));
+            } else {
+                // Jika tidak, ambil satu kata pertama
+                $username = $namaArray[0];
+            }
 
             $register = new User();
             $register->name      = $request->name;
@@ -64,11 +72,10 @@ class AuthController extends Controller
             $register->assignRole($register->role);
 
             DB::commit();
-            Session::flash('success','Success, Data Berhasil dikirim !');
-            return redirect()->route('login');
-        } catch (ErrorException $e) {
+            return redirect('/home')->with('success', 'Registrasi Berhasil, Silahkan Login');
+        } catch (\Exception $e) {
             DB::rollback();
-            throw new ErrorException($e->getMessage());
+            return redirect()->back()->with('error', 'Registrasi Gagal, Silahkan Coba Lagi');
         }
     }
 }

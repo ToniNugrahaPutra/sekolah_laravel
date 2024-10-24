@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
+use App\Models\Footer;
 use App\Models\Jurusan;
 use App\Models\Kegiatan;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class MenuController extends Controller
 {
@@ -17,14 +18,15 @@ class MenuController extends Controller
         // Menu
         $jurusanM = Jurusan::where('is_active','0')->get();
         $kegiatanM = Kegiatan::where('is_active','0')->get();
-        return view('frontend.program.jurusan.show', compact('jurusan','jurusanM','kegiatanM'));
+        $footer = Footer::first();
+        return view('frontend.program.jurusan.show', compact('jurusan','jurusanM','kegiatanM', 'footer'));
     }
 
     // Kegiatan
     public function kegiatan($slug)
     {
         $kegiatan = Kegiatan::where('slug', $slug)->first();
-        
+
         // Menu
         $jurusanM = Jurusan::where('is_active','0')->get();
         $kegiatanM = Kegiatan::where('is_active','0')->get();

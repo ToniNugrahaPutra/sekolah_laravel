@@ -36,41 +36,7 @@
             <div class="col-12">
                 <section>
                     <div class="row">
-                        <div class="col-7">
-                            <div class="card">
-                                <div class="card-header border-bottom">
-                                    <h4 class="card-title">Kategori Berita <a href=" {{route('backend-berita.create')}} " class="btn btn-primary">Tambah</a> </h4>
-                                </div>
-                                <div class="card-datatable">
-                                    <table class="dt-responsive table">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>No</th>
-                                                <th>Nama</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>    
-                                        <tbody>
-                                           @foreach ($kategori as $key => $kategoris)
-                                               <tr>
-                                                   <td></td>
-                                                   <td> {{$key+1}} </td>
-                                                   <td> {{$kategoris->nama}} </td>
-                                                   <td> {{$kategoris->is_active == '0' ? 'Aktif' : 'Tidak Aktif'}} </td>
-                                                   <td>
-                                                       <a href=" {{route('backend-kategori-berita.edit', $kategoris->id)}} " class="btn btn-success btn-sm">Edit</a>
-                                                   </td>
-                                               </tr>
-                                           @endforeach
-                                        </tbody>                                   
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-5">
+                        <div class="col-lg-12 col-sm-12">
                             <div class="card">
                                 <div class="card-header header-bottom">
                                     <h4>Tambah Kategori Berita</h4>
@@ -79,7 +45,7 @@
                                     <form action=" {{route('backend-kategori-berita.store')}} " method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="row">
-                                            <div class="col-12">
+                                            <div class="col-lg-6 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="basicInput">Nama </label> <span class="text-danger">*</span>
                                                     <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value=" {{old('nama')}} "/>
@@ -90,7 +56,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-lg-6 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="basicInput">Status </label> <span class="text-danger">*</span>
                                                     <select name="is_active" class="form-control @error('is_active') is-invalid @enderror">
@@ -109,6 +75,42 @@
                                         <button class="btn btn-primary" type="submit">Tambah</button>
                                         <a href="{{route('backend-kategori-berita.index')}}" class="btn btn-warning">Batal</a>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">Kategori Berita <a href=" {{route('backend-berita.create')}} " class="btn btn-primary">Tambah</a> </h4>
+                                </div>
+                                <div class="card-datatable">
+                                    <div class="table-responsive p-2">
+                                        <table class="table dt-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>No</th>
+                                                    <th>Nama</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach ($kategori as $key => $kategoris)
+                                                <tr>
+                                                    <td></td>
+                                                    <td> {{$key+1}} </td>
+                                                    <td> {{$kategoris->nama}} </td>
+                                                    <td> {{$kategoris->is_active == '0' ? 'Aktif' : 'Tidak Aktif'}} </td>
+                                                    <td>
+                                                        <a href=" {{route('backend-kategori-berita.edit', $kategoris->id)}} " class="btn btn-success btn-sm">Edit</a>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
