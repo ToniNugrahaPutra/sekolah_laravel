@@ -127,7 +127,7 @@ class PendaftaranController extends Controller
         // Jika data berkas sudah terisi
         if ($berkas->rapor) {
             Session::flash('error','Data kamu sudah lengkap !');
-            return redirect('/home');
+            return redirect()->route('home');
         }
         return view('ppdb::backend.pendaftaran.berkas', compact('berkas'));
     }
@@ -200,7 +200,7 @@ class PendaftaranController extends Controller
 
             DB::commit();
             Session::flash('success','Success, Data Berhasil dikirim !');
-            return redirect('/home');
+            return redirect()->route('home');
         } catch (ErrorException $e) {
             DB::rollback();
             throw new ErrorException($e->getMessage());

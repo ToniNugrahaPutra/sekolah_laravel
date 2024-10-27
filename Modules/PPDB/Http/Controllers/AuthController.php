@@ -72,7 +72,7 @@ class AuthController extends Controller
             $register->assignRole($register->role);
 
             DB::commit();
-            return redirect('/home')->with('success', 'Registrasi Berhasil, Silahkan Login');
+            return redirect()->route('home')->with('success', 'Registrasi Berhasil, Silahkan Login');
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->with('error', 'Registrasi Gagal, Silahkan Coba Lagi');

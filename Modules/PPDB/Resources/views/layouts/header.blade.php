@@ -24,7 +24,7 @@
                     <div class="col-lg-4 col-md-4 hidden-sm">
                         <div class="apply-btn-area">
                             @auth
-                                <a href="{{url('/home')}}" class="apply-now-btn3">Home</a>
+                                <a href={{ route('home') }}" class="apply-now-btn3">Home</a>
                             @else
                                 <a href="{{route('login')}}" class="apply-now-btn3">Login</a>
                                 <a href="{{route('register')}}" class="apply-now-btn">Daftar</a>

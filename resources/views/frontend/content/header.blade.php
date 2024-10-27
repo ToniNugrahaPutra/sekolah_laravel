@@ -23,7 +23,7 @@
                             <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">{{@$footer->email}}</a></li>
                             <li>
                                 @auth
-                                    <a href="/home" class="apply-now-btn2">Home</a>
+                                    <a href="{{ route('home') }}" class="apply-now-btn2">Home</a>
                                 @else
                                     <a class="apply-now-btn2" href="{{route('login')}}"> Masuk</a>
                                 @endauth

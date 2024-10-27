@@ -126,7 +126,7 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <button type="submit" class="btn btn-primary mt-2 mr-1">Tambah</button>
-                                                    <a href="/home" class="btn btn-outline-secondary mt-2">Batal</a>
+                                                    <a href="{{ route('home') }}" class="btn btn-outline-secondary mt-2">Batal</a>
                                                 </div>
                                             </div>
                                         </form>

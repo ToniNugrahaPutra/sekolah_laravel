@@ -17,7 +17,7 @@ class PPDBController extends Controller
     public function index()
     {
         $footer = Footer::first();
-        $logoSekolah = Storage::url('/images/logo/'.$footer->logo_sekolah) ?? Storage::url('/images/logo/logo-sekolah.png');
+        $logoSekolah = Storage::url('/images/logo/logo-sekolah.png');
         return view('ppdb::index', compact('footer', 'logoSekolah'));
     }
 

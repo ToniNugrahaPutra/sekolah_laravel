@@ -131,7 +131,7 @@
 
                             </div>
                             <button class="btn btn-primary" type="submit">Simpan</button>
-                            <a href="/home" class="btn btn-warning">Batal</a>
+                            <a href="{{ route('home') }}" class="btn btn-warning">Batal</a>
                         </form>
                     </div>
                 </div>
