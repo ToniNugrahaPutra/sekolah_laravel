@@ -8,7 +8,7 @@
                             @php
                                 $logoSekolah = env('LOGO_SEKOLAH');
                             @endphp
-                            <a href="/ppdb"><img class="img-responsive" src="{{ asset('storage/images/logo/'.$logoSekolah) }}" width="50px" alt="logo"></a>
+                            <a href="/ppdb"><img class="img-responsive" src="{{ $logoSekolah }}" width="50px" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-9">
