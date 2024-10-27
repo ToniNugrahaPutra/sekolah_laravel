@@ -37,10 +37,11 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => env('APP_ENV') === 'production' ? base_path('../pkbm_public/') : storage_path('app/public'),
+            'root' => storage_path('app/public'), // Tetap menggunakan storage_path
             'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
+
 
         's3' => [
             'driver' => 's3',
