@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    
+
     {{-- Slider --}}
     @section('slider')
         @include('frontend.content.slider')
@@ -20,10 +20,21 @@
         @include('frontend.content.video')
     @endsection
 
+    {{-- visimisi --}}
+    @section('visimisi')
+        @include('frontend.content.visimisidashboard')
+    @endsection
+
+    {{-- profilesekolah --}}
+    @section('profilesekolah')
+        @include('frontend.content.profilesekolahdashboard')
+    @endsection
+
     {{-- Guru --}}
     @section('guru')
         @include('frontend.content.guru')
     @endsection
+
 
      {{-- Berita & Event --}}
      @section('beritaEvent')
