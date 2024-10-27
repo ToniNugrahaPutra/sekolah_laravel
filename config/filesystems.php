@@ -37,8 +37,8 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => base_path('../pkbm_public/storage'),
-            'url' => env('APP_URL') . '/storage',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
 
@@ -67,8 +67,7 @@ return [
     */
 
     'links' => [
-        base_path('../pkbm_public/storage') => storage_path('app/public'),
+        public_path('storage') => storage_path('app/public'),
     ],
 
 ];
-
