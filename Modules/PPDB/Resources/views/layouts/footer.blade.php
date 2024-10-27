@@ -5,7 +5,10 @@
                 <div class="footer-box">
                     <a href="/">
                         @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.env('LOGO_SEKOLAH'))}}" width="100px" alt="logo">
+                            @php
+                                $logoSekolah = env('LOGO_SEKOLAH');
+                            @endphp
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.$logoSekolah)}}" width="100px" alt="logo">
                         @else
                             <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="100px" alt="logo">
                         @endif
