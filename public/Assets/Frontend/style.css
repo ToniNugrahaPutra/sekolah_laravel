@@ -10141,6 +10141,64 @@ ul.course-feature2 li:before {
   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
+.visimisi-area{
+    padding: 88px 0 100px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .visimisi-area{
+      padding: 78px 0 90px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .visimisi-area{
+      padding: 68px 0 80px;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .visimisi-area{
+      padding: 58px 0 70px;
+    }
+  }
+  @media (min-width: 321px) and (max-width: 479px) {
+    .visimisi-area{
+      padding: 48px 0 50px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .visimisi-area{
+      padding: 38px 0 40px;
+    }
+  }
+
+  .profile-area{
+    padding: 88px 0 100px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .profile-area{
+      padding: 78px 0 90px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .profile-area{
+      padding: 68px 0 80px;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .profile-area{
+      padding: 58px 0 70px;
+    }
+  }
+  @media (min-width: 321px) and (max-width: 479px) {
+    .profile-area{
+      padding: 48px 0 50px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .profile-area{
+      padding: 38px 0 40px;
+    }
+  }
+
 
 .invalid-feedback {
   color: red;

@@ -31,7 +31,7 @@
             @yield('slider')
         </div>
         <!-- Slider 1 Area End Here -->
-        
+
         <!-- About 1 Area Start Here -->
             @yield('about')
         <!-- About 1 Area End Here -->
@@ -44,10 +44,18 @@
             @yield('guru')
         <!-- Lecturers Area End Here -->
 
+        <!-- visimisi Area Start Here -->
+            @yield('visimisi')
+        <!-- visimisi Area End Here -->
+
+        <!-- profilesekolah Area Start Here -->
+            @yield('profilesekolah')
+        <!-- profilesekolah Area End Here -->
+
         <!-- News and Event Area Start Here -->
             @yield('beritaEvent')
         <!-- News and Event Area End Here -->
-        
+
         <!-- Footer Area Start Here -->
         <footer>
             @include('frontend.content.footer')
