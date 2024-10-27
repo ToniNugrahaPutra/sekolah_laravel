@@ -5,8 +5,11 @@
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <div class="header-top-left">
                         <div class="logo-area">
-                            @if (@$footer->logo == NULL)
-                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.env('LOGO_SEKOLAH'))}}" width="50px" alt="logo">
+                        @if (@$footer->logo == NULL)
+                            @php
+                                $logoSekolah = env('LOGO_SEKOLAH');
+                            @endphp
+                            <img class="img-responsive" src="{{asset('Assets/Frontend/img/'.$logoSekolah)}}" width="50px" alt="logo">
                         @else
                             <img class="img-responsive" src="{{asset('storage/images/logo/' .$footer->logo)}}" width="50px" alt="logo">
                         @endif
