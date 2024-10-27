@@ -32,7 +32,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => env('APP_URL'),
+            'root' => public_path('/'),
         ],
 
         'public' => [
